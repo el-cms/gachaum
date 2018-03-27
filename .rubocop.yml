@@ -1,0 +1,43 @@
+AllCops:
+  Exclude:
+  - bin/*
+  - db/schema.rb
+  - vendor/bundle/**/*
+  TargetRubyVersion: 2.3
+
+Metrics/AbcSize:
+  Exclude:
+  - db/migrate/*.rb
+
+Metrics/BlockLength:
+  Exclude:
+  - db/migrate/*.rb
+  - config/routes.rb
+  - spec/controllers/*
+  - spec/factories/*.rb
+
+Metrics/ClassLength:
+  Exclude:
+  - db/migrate/*.rb
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Exclude:
+  - db/migrate/*.rb
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Exclude:
+  - spec/**/*
+  - test/**/*
+
+Lint/UselessAssignment:
+  Exclude:
+  - spec/controllers/*

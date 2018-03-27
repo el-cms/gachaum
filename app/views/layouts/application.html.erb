@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gache</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+	<body>
+		<div class="menu">
+			<%= link_to 'Logs', :logs %>
+			<%= link_to 'Users', :users %>
+			<%= link_to 'Cards', :cards %>
+		</div>
+
+    <%= yield %>
+  </body>
+</html>

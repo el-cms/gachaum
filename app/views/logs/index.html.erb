@@ -1,0 +1,24 @@
+<h1>Logs</h1>
+
+<table>
+  <thead>
+		<tr>
+			<th></th>
+      <th>Card id,</th>
+      <th>User</th>
+      <th>Message</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @logs.each do |log| %>
+			<tr>
+				<td><%= log.created_at %></td>
+        <td><%= log.card ? log.card.number : '??' %></td>
+				<td><%= log.user ? log.user.name : '??' %></td>
+				<td><%= log.unknown_card %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
