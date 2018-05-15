@@ -1,9 +1,13 @@
 require 'mqtt'
 
+STDOUT.sync = true
+
 mqtt_server = 'broker.lan'
 
+puts "Starting MQTT connection to '#{mqtt_server}'…"
+
 MQTT::Client.connect(mqtt_server) do |c|
-  puts 'READY'
+  puts ' OK.'
   c.get('haum/gachaum/tag/uid') do |topic, message|
     puts "#{topic}: #{message}"
     card = Card.find_by(number: message)
