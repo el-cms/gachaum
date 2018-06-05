@@ -1,13 +1,13 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Number:</strong>
-  <%= @card.number %>
+  <strong>UID:</strong>
+  <%= @card.uid %>
 </p>
 
 <p>
   <strong>User:</strong>
-  <%= @card.user ? card.user.name : '--' %>
+  <%= @card.user ? @card.user.name : '--' %>
 </p>
 
 <%= link_to 'Edit', edit_card_path(@card) %> |

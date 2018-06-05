@@ -17,7 +17,7 @@
   <!--<pre><%#=user.card %></pre>-->
       <tr>
         <td><%= user.name %></td>
-        <td><%= user.card ? user.card.number : '--' %></td>
+        <td><%= user.card ? user.card.uid : '--' %></td>
         <td><%= link_to 'Show', user %></td>
         <td><%= link_to 'Edit', edit_user_path(user) %></td>
         <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>

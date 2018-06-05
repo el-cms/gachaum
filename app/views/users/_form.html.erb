@@ -19,7 +19,7 @@
 
   <div class="field">
     <%= form.label :card_id %>
-    <%= form.collection_select :card_id, Card.available_for_user(user), :id, :number, prompt: true %>
+    <%= form.collection_select :card_id, Card.available_for_user(user), :id, :uid, prompt: true %>
     <!--< %= form.fields_for :card, include_id: false do |f| %>-->
     <!--< %= f.hidden_field :user_id, value:user.id %>-->
     <!--< % end %>-->

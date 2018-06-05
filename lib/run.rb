@@ -10,7 +10,7 @@ MQTT::Client.connect(mqtt_server) do |c|
   puts ' OK.'
   c.get('haum/gachaum/tag/uid') do |topic, message|
     puts "#{topic}: #{message}"
-    card = Card.find_by(number: message)
+    card = Card.find_by(uid: message)
     begin
       puts "Welcome, #{card.user.name}."
       log = Log.create user_id: card.user.id, card_id: card.id

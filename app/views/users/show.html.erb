@@ -6,7 +6,7 @@
 </p>
 <p>
   <strong>Carte:</strong>
-  <%= @user.card ? @user.card.number : '--' %>
+  <%= @user.card ? @user.card.uid : '--' %>
 </p>
 
 <%= link_to 'Edit', edit_user_path(@user) %> |
