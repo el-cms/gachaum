@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th>Identifiant unique (UID)</th>
+      <th>Numéro imprimé</th>
       <th>Utilisateur</th>
       <th colspan="3"></th>
     </tr>
@@ -15,6 +16,7 @@
     <% @cards.each do |card| %>
       <tr>
         <td><%= card.uid %></td>
+        <td><%= card.number %></td>
         <td><%= card.user ? card.user.name : '--' %></td>
         <td><%= link_to 'Afficher', card %></td>
         <td><%= link_to 'Éditer', edit_card_path(card) %></td>
