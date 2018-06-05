@@ -82,3 +82,36 @@ div {
 label {
   display: block;
 }
+
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table td, table th {
+    border: 1px solid #E6E6E6;
+    padding: 8px;
+}
+
+table tr:nth-child(even){background-color: #1F1F1F;}
+
+table tr:hover {
+    background-color: #6B6B6B;
+    color: #fff;
+}
+
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #E6E6E6;
+    color: #000;
+}
+
+input, select {
+  display: inline-block;
+  border: 1px solid #ffffff;
+  color: #fff;
+  background: #000;
+}
