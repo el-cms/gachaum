@@ -1,14 +1,14 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>UID:</strong>
+  <strong>Identifiant unique (UID) :</strong>
   <%= @card.uid %>
 </p>
 
 <p>
-  <strong>User:</strong>
+  <strong>Utilisateur :</strong>
   <%= @card.user ? @card.user.name : '--' %>
 </p>
 
-<%= link_to 'Edit', edit_card_path(@card) %> |
-<%= link_to 'Back', cards_path %>
+<%= link_to 'Éditer', edit_card_path(@card) %> |
+<%= link_to 'Retour', cards_path %>
