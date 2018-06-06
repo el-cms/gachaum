@@ -32,14 +32,6 @@ a {
   }
 }
 
-th {
-  padding-bottom: 5px;
-}
-
-td {
-  padding: 0 5px 7px;
-}
-
 div {
   &.field, &.actions {
     margin-bottom: 10px;
@@ -87,26 +79,26 @@ table {
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
-}
-
-table td, table th {
-    border: 1px solid #E6E6E6;
-    padding: 8px;
-}
-
-table tr:nth-child(even){background-color: #1F1F1F;}
-
-table tr:hover {
-    background-color: #6B6B6B;
-    color: #fff;
-}
-
-table th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #E6E6E6;
-    color: #000;
+    td, th {
+        border: 1px solid #E6E6E6;
+        padding: 8px;
+    }
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #E6E6E6;
+        color: #000;
+    }
+    tr {
+        &:nth-child(even) {
+            background-color: #1F1F1F;
+        }
+        &:hover {
+        background-color: #6B6B6B;
+        color: #fff;
+        }
+    }
 }
 
 input, select {
